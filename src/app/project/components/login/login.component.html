@@ -1,0 +1,27 @@
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <div class="logo-bg-top"></div>
+            <div class="logo-purple-top"></div>
+            <div class="logo-purple-bot"></div>
+        </div>
+        
+        <div class="main-buttons-container">
+            
+            <label for="login-email">Email</label>
+            <input type="text" id="login-email" name="login-email" placeholder="email@email.com">
+            <input type="password" id="pass-email" name="login-pass" placeholder="Senha">
+            
+            <button class="button-default"><span class="button-default-text">Entrar</span></button>
+            
+            <div class="secondary-link-container">
+                <a class="link-small" [routerLink]="['/signup']">Esqueceu a senha?</a>
+            </div> 
+
+            <div class="secondary-link-container">
+                <a class="link-default" [routerLink]="['/signup']">Não tem uma conta? Cadastre-se</a>
+            </div> 
+        </div>
+
+    </div>
+</body>
