@@ -4,9 +4,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { SignupComponent, IntroComponent, LoginComponent } from './components/';
+import { NewaccountComponent } from './components/newaccount/newaccount.component';
+import { RecoverpasswordComponent } from './components/recoverpassword/recoverpassword.component';
+import { RedefinepasswordComponent } from './components/redefinepassword/redefinepassword.component';
 
 @NgModule({
-  declarations: [SignupComponent, IntroComponent, LoginComponent],
+  declarations: [SignupComponent, IntroComponent, LoginComponent, NewaccountComponent, RecoverpasswordComponent, RedefinepasswordComponent],
   imports: [ CommonModule, RouterModule ],
 })
 export class ProjectModule { }
