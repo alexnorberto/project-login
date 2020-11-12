@@ -48,6 +48,10 @@ hr{
     margin: 63px;
 }
 
+button:hover{
+    opacity: .9;
+}
+
 .button-default{
     letter-spacing: 1px;
     width: 312px;
