@@ -11,18 +11,15 @@ export class IntroComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    
+
+   
     const splash = document.querySelector('.splash');
     
-    document.addEventListener('DOMContentLoaded',(e)=>{
-      setTimeout(()=>{
-        console.log("splash?");
-        splash.classList.add('display-none');
-        //this.router.navigate(['/login']);
-      }, 2000);
-    });
-
-
+    setTimeout(()=>{
+      console.log("splash 1");
+      splash.classList.add('display-none');
+      //this.router.navigate(['/login']);
+    }, 2000);
 
   }
 
