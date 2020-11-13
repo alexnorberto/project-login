@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.363" height="171.889" viewBox="0 0 109.363 171.889">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7befb;
+      }
+
+      .cls-2 {
+        fill: #7e0cf5;
+      }
+
+      .cls-3 {
+        filter: url(#Path_153);
+      }
+
+      .cls-4 {
+        filter: url(#Path_152);
+      }
+    </style>
+    <filter id="Path_152" x="0" y="0" width="109.363" height="171.889" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_153" x="24.469" y="25.074" width="60.441" height="127.346" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logo" transform="translate(-262 -655)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 262, 655)">
+      <path id="Path_152-2" data-name="Path 152" class="cls-1" d="M754.99,230.126c3.958-5.961,10.166-9.376,19.238-9.574,9.028.2,15.233,3.613,19.225,9.574H814.68a8.29,8.29,0,0,0,8.291-8.291V121.125q-.455-24.534-14.716-37.771-14-13.117-34.027-13.117a47.286,47.286,0,0,0-33.438,13.1q-14.969,13.208-15.182,37.711V221.835a8.291,8.291,0,0,0,8.291,8.291Z" transform="translate(-719.61 -64.24)"/>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 262, 655)">
+      <path id="Path_153-2" data-name="Path 153" class="cls-2" d="M753.141,125.79Q753.627,99.1,777.3,98.611q23.563.517,24.282,27.179v63.947a24.22,24.22,0,1,1-48.441,0Z" transform="translate(-722.67 -67.54)"/>
+    </g>
+  </g>
+</svg>
