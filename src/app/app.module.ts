@@ -18,9 +18,9 @@ import { ProjectModule } from './project';
     ProjectModule,
     
   ],
-  providers: [{
-    provide: LocationStrategy, useClass: HashLocationStrategy
-  }],
+  providers: [
+    //{    provide: LocationStrategy, useClass: HashLocationStrategy  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

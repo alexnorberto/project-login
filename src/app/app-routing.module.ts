@@ -12,11 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '**',
-    redirectTo: '/intro',
-    pathMatch: 'full'
-  },
-  {
     path:'intro',
     component:IntroComponent
   },
