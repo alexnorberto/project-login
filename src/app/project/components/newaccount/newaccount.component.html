@@ -1,1 +1,25 @@
-<p>newaccount works!</p>
+<div class='logo-container'>
+    <a [routerLink]="['/intro']"><img src="assets/images/A28C4766-EF81-4620-9226-588C7404191F.svg" class="medium-logo"></a>
+</div>
+<div class="main-container">
+    
+    <div class="main-buttons-container">
+
+        <form #formRegister="ngForm" (ngSubmit)="onSubmit(formRegister)">
+            <label for="register-nome">Nome</label>
+            <input required ngModel type="text" id="register-nome" name="register-nome" placeholder="Nome">
+            <label for="register-email">Email</label>
+            <input required email ngModel type="text" id="register-email" name="register-email" placeholder="email@email.com">
+            <input required ngModel type="password" id="pass-email" name="register-pass" placeholder="Senha">
+            
+            <button class="button-default" type="submit" [disabled]="!formRegister.valid" [routerLink]="['/intro']"><span class="button-default-text">Cadastrar</span></button>
+        </form>     
+
+        <div class="secondary-link-container">
+            <a class="link-small" [routerLink]="['/login']">Já tem uma conta?</a>
+        </div> 
+
+        
+    </div>
+
+</div>

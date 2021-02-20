@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { SignupComponent, LoginComponent,  IntroComponent,
-         RecoverpasswordComponent, RedefinepasswordComponent
+         RecoverpasswordComponent, RedefinepasswordComponent, NewaccountComponent
 } from './project';
 
 const routes: Routes = [
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path:'signup',
     component:SignupComponent
+  },
+  {
+    path:'newAcc',
+    component:NewaccountComponent
   },
   {
     path:'recoverpass',

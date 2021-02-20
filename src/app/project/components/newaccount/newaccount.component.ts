@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-newaccount',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewaccountComponent implements OnInit {
 
-  constructor() { }
+  onSubmit(form){
+    console.log(form);
+    this.http.post('https://httpbin.org/post',JSON.stringify(form.value))
+      .pipe(map(res=>res))
+      .subscribe(dados=>console.log(dados));
+  }
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
-
 }

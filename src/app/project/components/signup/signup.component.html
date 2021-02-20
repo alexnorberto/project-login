@@ -1,12 +1,12 @@
 <div class='logo-container'>
-    <img src="assets/images/A28C4766-EF81-4620-9226-588C7404191F.svg" class="medium-logo">
+    <a [routerLink]="['/intro']"><img src="assets/images/A28C4766-EF81-4620-9226-588C7404191F.svg" class="medium-logo"></a>
 </div>
 <div class="main-container">
     
     <div class="main-buttons-container">
-        <button class="button-default"><span class="button-default-text">Continuar com Facebook</span></button>
-        <button class="button-default"><span class="button-default-text">Continuar com Gmail</span></button>
-        <button class="button-inverse"><span class="button-inverse-text">Criar Conta</span></button>
+        <button class="button-default" [routerLink]="['/']"><span class="button-default-text">Continuar com Facebook</span></button>
+        <button class="button-default" [routerLink]="['/']"><span class="button-default-text">Continuar com Gmail</span></button>
+        <button class="button-inverse" [routerLink]="['/newAcc']"><span class="button-inverse-text">Criar Conta</span></button>
     
         <div class="privacy-container">
             <hr>

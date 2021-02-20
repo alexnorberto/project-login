@@ -1,5 +1,5 @@
 <div class='logo-container'>
-    <img src="assets/images/A28C4766-EF81-4620-9226-588C7404191F.svg" class="medium-logo">
+    <a [routerLink]="['/intro']"><img src="assets/images/A28C4766-EF81-4620-9226-588C7404191F.svg" class="medium-logo"></a>
 </div>
 <div class="main-container">
     
@@ -10,7 +10,7 @@
             <input required email ngModel type="text" id="login-email" name="login-email" placeholder="email@email.com">
             <input required ngModel type="password" id="pass-email" name="login-pass" placeholder="Senha">
             
-            <button class="button-default" type="submit" [disabled]="!formLogin.valid"><span class="button-default-text">Entrar</span></button>
+            <button class="button-default" type="submit" [disabled]="!formLogin.valid" [routerLink]="['/intro']"><span class="button-default-text">Entrar</span></button>
         </form>     
 
         <div class="secondary-link-container">
